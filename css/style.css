@@ -1,0 +1,419 @@
+
+/*  
+
+   Color Used
+   Dark Gray :#3a4850;
+   Red       :#c1272d; 
+
+ */
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  margin:0;
+  padding: 0;
+  font: 300 14px/21px "Roboto",sans-serif;
+  color:#3a4850;
+
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+ #logo {
+    height: 0;
+    padding: 0 0 0 25px;
+}
+.navbar-inverse{
+   background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
+    background-repeat: repeat-x;
+    border-bottom:1px solid #e4e0e0;
+    border-radius: 0px;
+}
+
+
+.navbar {
+    min-height: 77px;
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+    background-color: #c1272d;
+  
+  
+  
+
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #c1272d;
+}
+
+.navbar-toggle {
+   
+    background-color: #3a4850;
+  
+    border-radius: 0px;
+}
+
+.navbar-right {
+    
+    margin-right: 85px;
+}
+@media (min-width: 768px) {
+ .navbar-inverse .navbar-nav > li:hover {
+
+ 
+
+  }
+}
+
+.navbar-nav > li > a {
+    line-height: 300%;
+   /* padding-right: 50px;*/
+    font-weight: 700;
+   font-size: 15px;
+  
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color:  #c1272d;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #3a4850;
+
+   
+}
+
+
+#s_social{
+   
+    position: fixed; 
+    top:40%;
+    left: 0;
+    width: 70px;
+    margin: 147.5px 0 0 0;
+    z-index: 1;
+
+}
+
+#s_social .s_icon{
+  width: 70px; 
+  height: 70px;
+  background-color :#3a4850;
+  position: relative;
+  margin:0 0 5px 0;
+
+
+}
+#s_social .s_icon:last-child{
+  margin:0 ;
+}
+
+#s_social .s_icon span{
+  width: 70px; 
+  height: 70px;
+ position: absolute; 
+top: 0;
+left: -70px;
+
+}
+
+#s_social .s_icon img{
+ 
+ position: absolute; 
+top: 10px;
+left: 20px;
+z-index: 10;
+}
+
+.s_facebook{background-color:#c1272d; }
+.s_youtube{background-color:#c1272d; }
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 375px;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 375px;
+  background-color: #c1272d;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 325px;
+}
+
+.container1{
+ background-color:#faf9f8;
+}
+
+.bigtext {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+ 
+}
+.bigtext span{
+  
+  color:#c1272d;
+ 
+}
+
+.stickers{
+  margin-left: 20px;
+  
+}
+.stickers div{
+ 
+  margin: 5px;
+  min-height: 220px;
+  padding-top: 20px;
+}
+
+.contact{
+  background-color: #c1272d;
+  height: 300px;
+  margin-left: 20px;
+-webkit-animation: cssAnimation 5.000s 1 linear;
+-moz-animation:  cssAnimation 5.000s 1 linear;
+-o-animation: cssAnimation 5.000s 1 linear;
+}
+
+@-webkit-keyframes cssAnimation {
+from {-webkit-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+-moz-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+-o-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+ }
+to {-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+}
+@-moz-keyframes cssAnimation {
+from {-webkit-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+-moz-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+-o-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+ }
+to {-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+}
+@-o-keyframes cssAnimation {
+from {-webkit-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+-moz-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+-o-transform: rotate(5deg) scale(1.000) skew(10deg) translate(10px) ;
+ }
+to {-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+}
+
+
+.contact h3, .contact p {
+  color: #ffffff;
+}
+
+.stickers1 div{
+  margin: 5px;
+  padding-top: 10px;
+}
+
+.btn{
+  width: 110px;
+  height: 40px;
+  background-image: url(../images/btn2.png);
+  background-repeat: no-repeat;
+  color: #ffffff;
+
+
+}
+
+.btn:hover{
+  width: 110px;
+  height: 40px;
+  background-image: url(../images/btn1.png);
+  background-repeat: no-repeat;
+
+}
+
+.details{
+
+   background-color:#3a4850; 
+   min-height: 200px;
+   color: #ffffff;
+
+   background: url(../images/details.png) no-repeat center center; 
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0px;
+  padding-top: 30px;
+}
+
+.details li:first-child{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.details ul {
+   list-style-type: none;
+}
+
+.footer{
+  min-height: 50px;
+  text-align: center;
+}
+
+.footer p{
+  margin-top: 20px;
+}
+
+ 
+  
+/*  services  */
+
+.services {
+  margin-top: 100px;
+  
+}
+
+.services-left{
+  text-align: center;
+}
+.services-left .list-group-item, .services-right .list-group-item{
+   border-radius: 0;
+}
+
+.services-left ul li:first-child{  
+    font-size: 30px;
+    font-weight: 900;
+    background-color:#3a4850;
+    color :#c1272d;
+}
+
+.services-left ul li{  
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
